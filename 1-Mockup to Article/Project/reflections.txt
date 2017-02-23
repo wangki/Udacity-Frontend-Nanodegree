@@ -1,0 +1,30 @@
+You've learned a lot about web development so far. I want you to take a moment to write down your thoughts about web development here. Answer the following questions:
+  * What new skills have you learned?
+  I've learned new tags such as <hr>, <sup>
+
+  * What has been easy?
+  I have experience in html so I can easily finish this project, but still there were concepts that to be filled in my brain.
+
+  * What has been difficult?
+  Recently I am using rubymine(jetbrain product) and this is very useful but still I am not used to this product, trying to getting the shortcuts and more.
+
+  * How have you used the problem solving strategies from the first project to overcome challenges so far?
+  Sure, As I remembered there were two simple strategies, 1. Sleep on it. 2. get help from communities. I've searched MDN and stakcoverflow to get to know the sup tag.
+
+---
+
+Your response goes here!
+
+  * What new skills have you learned?
+  I've learned new tags such as <hr>, <sup>
+
+  * What has been easy?
+  I have experience in html so I can easily finish this project, but still there were concepts that to be filled in my brain.
+
+  * What has been difficult?
+  Recently I am using rubymine(jetbrain product) and this is very useful but still I am not used to this product, trying to getting the shortcuts and more.
+
+  * How have you used the problem solving strategies from the first project to overcome challenges so far?
+  Sure, As I remembered there were two simple strategies, 1. Sleep on it. 2. get help from communities. I've searched MDN and stakcoverflow to get to know the sup tag.
+
+  Hope for the best for the next course as well. Thank you!
