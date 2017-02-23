@@ -1,0 +1,38 @@
+/* add your CSS here */
+
+
+body {
+    width:300px;
+    border-color: grey;
+    border-style: solid;
+    border-width:1px;
+    box-shadow: 5px 5px 5px lightgray;
+    padding:  20px;
+}
+
+
+.description {
+    border-color: grey;
+    border-style: solid;
+    border-width:1px;
+    padding: 10px;
+}
+.description .gist {
+    font-style: italic;
+}
+.specification {
+    padding-left: 0;
+}
+
+.specification span {
+    font-weight:bold;
+}
+
+.specification li {
+    list-style-type: none;
+    padding-bottom:2px;
+
+}
+
+
+
