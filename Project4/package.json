@@ -1,0 +1,29 @@
+{
+  "name": "project-4",
+  "version": "1.0.0",
+  "description": "Project-4 for udacity",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "wk",
+  "license": "ISC",
+  "dependencies": {
+    "gulp-install": "^1.1.0"
+  },
+  "devDependencies": {
+    "combine-js": "^1.0.0",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-clean-css": "^3.0.4",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-find": "0.0.10",
+    "gulp-minify": "0.0.15",
+    "gulp-minify-html": "^1.0.6",
+    "gulp-processhtml": "^1.1.0",
+    "gulp-responsive-images": "0.0.3",
+    "gulp-uglify": "^2.1.2",
+    "vinyl-fs": "^2.4.4"
+  }
+}
