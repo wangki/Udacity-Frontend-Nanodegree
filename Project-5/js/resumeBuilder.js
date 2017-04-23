@@ -5,10 +5,10 @@ This is empty on purpose! Your code to build the resume will go here.
 
 function appender(div,Item) {
     $(div).append(Item)
-}
+};
 function prepender(div,Item) {
     $(div).prepend(Item)
-}
+};
 
 
 
@@ -41,6 +41,7 @@ var bio = {
         jQuery.each(bio.contacts, function (index, value) {
             var formattedContactGeneric = HTMLcontactGeneric.replace("%contact%",index).replace("%data%",value);
             appender("#topContacts",formattedContactGeneric);
+            appender("#footerContacts",formattedContactGeneric);
 
         });
 
@@ -126,8 +127,18 @@ var education = {
             appender(".education-entry", HTMLschoolLocation.replace("%data%", element.location));
             appender(".education-entry", HTMLschoolMajor.replace("%data%", element.majors));
             appender(".education-entry", HTMLschoolDegree.replace("%data%", element.degree));
+
         });
 
+        appender("#education",HTMLonlineClasses);
+        education.onlineCourses.forEach(function (element, index) {
+            var formattedOnlineTitle =HTMLonlineTitle.replace("%data%",element.title);
+            var formattedOnlineSchool = HTMLonlineSchool.replace("%data%",element.school);
+            appender(".online-education-entry",formattedOnlineTitle +formattedOnlineSchool );
+            appender(".online-education-entry",HTMLonlineDates.replace("%data%",element.dates));
+            appender(".online-education-entry",HTMLonlineURL.replace("%data%",element.url));
+
+        });
     }
 };
 
@@ -136,13 +147,13 @@ var projects = {
         "title": "build an app",
         "dates": "2017-02-01",
         "description": "built an app",
-        "images": "./images/197x148.gif"
+        "images": ["./images/197x148.gif","./images/197x148.gif" ]
         },
         {
             "title": "build an app",
             "dates": "2017-02-01",
             "description": "built an app",
-            "images": "./images/197x148.gif"
+            "images": ["./images/197x148.gif","./images/197x148.gif" ]
         }
     ],
     "display": function () {
@@ -151,18 +162,11 @@ var projects = {
             appender(".project-entry",HTMLprojectTitle.replace("%data%",element.title));
             appender(".project-entry",HTMLprojectDates.replace("%data%",element.dates));
             appender(".project-entry",HTMLprojectDescription.replace("%data%",element.description));
-            appender(".project-entry",HTMLprojectImage.replace("%data%","./images/197x148.gif"));
-
+            element.images.forEach(function (element,index) {
+                appender(".project-entry",HTMLprojectImage.replace("%data%",element));
+                });
         });
-        appender(".education-entry",HTMLonlineClasses);
-        education.onlineCourses.forEach(function (element, index) {
-            var formattedOnlineTitle =HTMLonlineTitle.replace("%data%",element.title);
-            var formattedOnlineSchool = HTMLonlineSchool.replace("%data%",element.school);
-            appender(".education-entry",formattedOnlineTitle +formattedOnlineSchool );
-            appender(".education-entry",HTMLonlineDates.replace("%data%",element.dates));
-            appender(".education-entry",HTMLonlineURL.replace("%data%",element.url));
 
-        });
 
     }
 
