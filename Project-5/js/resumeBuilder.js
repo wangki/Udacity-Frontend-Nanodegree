@@ -4,11 +4,11 @@ This is empty on purpose! Your code to build the resume will go here.
 
 
 function appender(div,Item) {
-    $(div).append(Item)
-};
+    $(div).append(Item);
+}
 function prepender(div,Item) {
-    $(div).prepend(Item)
-};
+    $(div).prepend(Item);
+}
 
 
 
